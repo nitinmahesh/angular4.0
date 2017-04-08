@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
     template: `
     <h1>{{message}}</h1>
     <input type="text" [(ngModel)]="nextmessage"/>
-    <button (click)="foo()">Hi</button>`
+    <button (click)="foo()">Hi </button>`
 })
 export class GreetComponent{
     message :string = "Hello World";
