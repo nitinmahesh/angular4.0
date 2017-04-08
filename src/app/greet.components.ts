@@ -11,7 +11,8 @@ export class GreetComponent{
 
     @Input()
         set greetMessage(message : string){
-            this._greetMessage = message + " I am intercepted.";
+            //this._greetMessage = message + " I am intercepted.";
+            this._greetMessage = (message && message.trim()) || "I am default name";
         }
         get greetMessage(){
             return this._greetMessage;
