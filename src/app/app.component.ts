@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  foo(data){
+    console.log();
+    
+  }
   childNameArray = ['foo','koo','','hoo','moo','too'];
   childNameArray1 = ['foo1','koo1','1','hoo1','moo1','too1'];
 }
