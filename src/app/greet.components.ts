@@ -3,7 +3,13 @@ import {Component, Input} from '@angular/core';
 @Component({
     selector:'greet',
     template: `
-    <h1>{{_greetMessage}}</h1>`
+    <style>
+    h1 {
+      color: purple;
+    }
+    </style>
+    <h1>{{_greetMessage}}</h1>`,
+    styles: ['h1 { font-weight: normal; }']
 })
 export class GreetComponent{
     //message :string = "Hello World";
