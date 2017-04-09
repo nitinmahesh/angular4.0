@@ -1,6 +1,6 @@
 <h1>
   {{title}}
 </h1>
-<greet (eventclick)></greet>
-<greet *ngFor="let n of childNameArray" [greetMessage]="n"></greet>
-<greet *ngFor="let n of childNameArray1" [greetMessage]="n"></greet>
+<greet (eventclick)="foo($event)"></greet>
+<greet#mygreet (eventclick)="foo($event)"></greet>
+<h2>{{mygreet.message}}</h2>

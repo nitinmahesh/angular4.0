@@ -19,14 +19,7 @@ export class GreetComponent{
 @Output() eventClick = new EventEmitter();
 handleclick(){
     console.log("I am clicked.");
-    this.eventClick.
+    this.eventClick.emit("Hi I am clicked from parent.");
 }
-    @Input()
-        set greetMessage(message : string){
-            //this._greetMessage = message + " I am intercepted.";
-            this._greetMessage = (message && message.trim()) || "I am default name";
-        }
-        get greetMessage(){
-            return this._greetMessage;
-        }
+
 }
